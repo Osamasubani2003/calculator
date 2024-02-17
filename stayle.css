@@ -1,0 +1,105 @@
+body{
+    background-color: #f0f0f0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.calculator{
+    display: inline-block;
+    background-color: #ffffff;
+    padding-left: 15px; 
+    padding-right: 2px;
+    border-radius: 15px;
+    height: 320px;
+    width: 600px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.resulte{
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c7c7c7;
+    height: 70px;
+    width: 570px;
+    margin: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#screenAns{
+    float: right;
+    margin-bottom: 2px;
+    text-align: right;
+    margin: 5px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #88898d;
+    width: 545px;
+}
+#screen{
+    float: right;
+    text-align: right;
+    width: 545px;
+    height: 32px;
+    font-size: 30px;
+    margin-left: 380px;
+    margin-right: 15px;
+    border-width: 0px;
+}
+.ControlsBoard{
+    margin-top: 0px;
+}
+.buttonsRight{
+    float: right;
+    height: 200px;
+    width: 349px;
+}
+.buttonsLeft{
+    float: left;
+    height: 120px;
+}
+button{
+    height: 35px;
+    width: 75px;
+    border-radius: 5px;
+    border-width: 0px;
+    margin: 2px;
+    font-size: 13px;
+    font-weight: 100;
+}
+.operatorButtons,.inverseButtons{
+    background-color: #ced0d4;
+}
+.equalButtons{
+    background-color: #5587ec;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 0px;
+}
+.numberButtons,#inv2{
+    background-color: #ececec;
+}
+button:active{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+button:hover{
+    cursor:pointer;
+}
+.resulte:active {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1e6fe7;
+}
+.resulte:hover {
+    border-top: 1px solid #000000;
+}
+
+.equalButtons:active{
+    border-color: #0c3280;
+}
+#backSpace,.inverseButtons{
+    display: none;
+}
