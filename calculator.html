@@ -7,9 +7,12 @@
     <script src="JavaScript.js"></script>
 </head>
 <body>
+    <header>
+        <h1>calculator</h1>
+    </header>
     <div class="calculator">
         <div class="resulte">
-            <label id="screenAns"></label><br>
+            <label id="screenAns">ans=0</label><br>
             <label id="screen"></label>
         </div>
         <div class="ControlsBoard">
@@ -92,7 +95,8 @@
                 <table>
                     <tr>
                         <td colspan="2">
-                                                  
+                            <button class="operatorButtons" id="rad" onclick="Rad()">Rad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="rd">Deg</span></button>
+                            <button class="operatorButtons" id="deg" onclick="Deg()"><span class="rd">Rad</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deg</button>
                         </td>
                         <td>
                             <button class="operatorButtons" onclick="fact()">x!</button>
@@ -127,28 +131,28 @@
                     </tr>
                     <tr>
                         <td>
-                            <button class="operatorButtons">e</button>
+                            <button class="operatorButtons" onclick="euler()">e</button>
                         </td>
                         <td>
-                            <button class="operatorButtons" id="tan">tan</button>
-                            <button class="inverseButtons" id="tanInv">tan<sup>-1</sup></button>
+                            <button class="operatorButtons" id="tan" onclick="tan()">tan</button>
+                            <button class="inverseButtons" id="tanInv" onclick="tanInv()">tan<sup>-1</sup></button>
                         </td>
                         <td>
-                            <button class="operatorButtons" id="root">√</button>
-                            <button class="inverseButtons" id="rootInv">x<sup>2</sup></button>
+                            <button class="operatorButtons" id="root" onclick="sqr()">√</button>
+                            <button class="inverseButtons" id="rootInv" onclick="square()">x<sup>2</sup></button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button class="operatorButtons" id="ans">Ans</button>
-                            <button class="inverseButtons" id="rnd">Rnd</button>
+                            <button class="operatorButtons" id="ans" onclick="Ans()">Ans</button>
+                            <button class="inverseButtons" id="rnd" onclick="Rnd()">Rnd</button>
                         </td>
                         <td>
-                            <button class="operatorButtons">EXP</button>
+                            <button class="operatorButtons" onclick="EXP()">EXP</button>
                         </td>
                         <td>
                             <button class="operatorButtons" id="xPower" onclick="exponentiation()">x<sup>y</sup></button>
-                            <button class="inverseButtons" id="xRoot" onclick="rootx()"><sup>y</sup>√x</button>
+                            <button class="inverseButtons" id="xRoot" onclick="rootx()"><sup>y</sup>√x<span>=xroot(y)</span></button>
                         </td>
                     </tr>
                 </table>
